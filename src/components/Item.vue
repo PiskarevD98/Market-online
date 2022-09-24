@@ -92,6 +92,7 @@ export default {
   font-size: 12px;
   line-height: 28px;
   transition: 0.3s ease-in;
+  margin-left:3%;
 }
 .product-item:hover .btn-main {
   background: #fc5a5a;

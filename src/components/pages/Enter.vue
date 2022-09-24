@@ -1,4 +1,5 @@
 <template>
+  <div class="container">
   <my-dialog v-model:show="dialogVisible" v-if="$store.state.name.length === 0">
     <post-form @create="createUser" />
   </my-dialog>
@@ -14,6 +15,7 @@
     <b>Order price:{{$store.state.items[0] * 2}} &#8364;</b>
     <my-button class="btn_enter">Order</my-button>
   </div>
+</div>
 </template> 
 
 <script>
@@ -53,6 +55,9 @@ export default {
 </script>
 
 <style scoped>
+   .container {
+    height: 40.5em;
+  }
 .btn_enter {
   color: white;
   border-color: white;

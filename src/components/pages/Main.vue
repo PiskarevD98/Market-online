@@ -8,6 +8,7 @@
     <my-select class="select" v-model="selectedSort" :options="sortOptions" />
   </div>
   <item-list :items="sortedAndSearchedItems" />
+  <a href="#" title="Вернуться к началу" class="topbutton">Вверх</a>
 </template>
 
 <script>
@@ -59,6 +60,7 @@ export default {
 <style scoped>
 .container {
   display: flex;
+  box-sizing: border-box;
 }
 .header {
   margin-left: 1%;
@@ -68,6 +70,7 @@ export default {
   color: transparent;
   background-clip: text;
   -webkit-background-clip: text;
+  padding-top:0.5%;
 }
 .search {
   margin-left: 1rem;
@@ -81,6 +84,21 @@ export default {
   margin-left: 84%;
   border: 3px solid plum;
   width: 15%;
-  margin-top: 1%;
+  margin-top:0.5%;
 }
+
+.topbutton {
+  padding: 10px 15px;
+  background: red;
+  color: white;
+  border: 1px solid rgb(230, 168, 149);
+  border-radius: 4px;
+  width:5%;
+  margin-left:90%;
+  margin-bottom:1%;
+  text-decoration: none;
+}
+.topbutton:hover {background: rgb(232,95,76); } 
+.topbutton:active { background: rgb(152,15,0); } 
+
 </style>

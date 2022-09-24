@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="container">
     <p>
       Данное приложение разработано мной с 0, здесь я изучаю Vue и по мере
       возможности буду его расширять
@@ -19,4 +19,7 @@ export default {};
 </script>
 
 <style scoped>
+  .container {
+    height: 40.5em;
+  }
 </style>
